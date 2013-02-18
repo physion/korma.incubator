@@ -7,7 +7,7 @@
             [clojure.string :as string]
             [korma.db :as db]
             [korma.config :as conf])
-  (:use [korma.sql.engine :only [bind-query bind-params]]))
+  (:use [korma.sql.engine :only [bind-query]]))
 
 (def ^{:dynamic true} *exec-mode* false)
 (declare get-rel)
